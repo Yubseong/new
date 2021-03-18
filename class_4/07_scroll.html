@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<style>
+		.wrap {
+			padding: 50px;
+			text-align: center;
+		}
+
+		.wrap .box {
+			height: 2000px;
+			background: #da56be;
+		}
+
+		.wrap .btn_top {
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			display: block;
+			background: #5697da;
+			position: fixed;
+			bottom: 10px;
+			right: 10px;
+			color: #fff;
+			font-weight: bold;
+			font-size: 20px;
+			text-align: center;
+			border: 0
+		}
+	</style>
+	<script>
+		$(function () {
+			// $(".btn_top").hide();
+			// $(window).scroll(function(){
+			// 	console.log($(this).scrollTop());
+			// 	if($(this).scrollTop() == 0){
+			// 		$(".btn_top").hide(300);
+			// 	}else{
+			// 		$(".btn_top").show(300);
+			// 	}
+			// })
+
+			// $(".btn_top").click(function(){
+			// 	$("html").scrollTop(0);
+			// 	$("html").animate({
+			// 		"scrollTop":0
+			// 	}, 1000);
+			// });
+			
+			//탑 버튼 숨김 처리
+			
+			$(".btn_top").hide();
+
+			//스크롤 위치에 따른 탑 버튼 숨김/보여짐 처리
+			$(window).scroll(function(){
+				var value = $(this).scrollTop(); //<-- ()안에 값이 없으면 위치값 반환
+				// console.log(value);
+				if(value == 0){
+					$(".btn_top").hide(200);
+				}else{
+					$(".btn_top").show(200);
+				}
+			});
+
+			//탑 버튼 클릭시 페이지 상단 이동
+			$(".btn_top").click(function(){
+				//$("html").scrollTop(0); //<--()안에 값이 있으면 위치 이동 이벤트 발생
+
+				$("html").animate({
+					"scrollTop":0
+				},500)
+			});
+		})
+	</script>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="box"></div>
+		<button class="btn_top">top</button>
+	</div>
+</body>
+
+</html>

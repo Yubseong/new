@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .header {}
+
+        .header h1 {
+            height: 110px;
+            text-align: center;
+        }
+
+        .header h1 a {
+            display: inline-block;
+            margin-top: 22px;
+        }
+
+        .container {
+            padding: 70px 0 100px
+        }
+
+        .product .box_unit {
+            width: 33.3%;
+            float: left;
+            height: 212px;
+            text-align: center;
+        }
+
+        .product .box_unit>* {
+            vertical-align: middle;
+        }
+
+        .product .box_unit>br {
+            display: none;
+        }
+
+        .product .box_unit:nth-child(1) {
+            background: #85d3e7;
+        }
+
+        .product .box_unit:nth-child(2) {
+            background: #8fd2a6;
+        }
+
+        .product .box_unit:nth-child(3) {
+            background: #7fcac6;
+        }
+
+        .product .box_unit:nth-child(1) .img,
+        .product .box_unit:nth-child(2) .img {
+            margin-top: -34px;
+        }
+
+        .product .box_unit:nth-child(3) .txt {
+            margin-top: -34px
+        }
+
+        @media all and (max-width:1210px) {
+            .product .box_unit {
+                float: none;
+                width: auto;
+            }
+
+            .product .box_unit .txt {
+                margin-left: 50px;
+            }
+
+            .product .box_unit+.box_unit {
+                margin-top: 40px
+            }
+        }
+
+        @media all and (max-width:640px) {
+            .product .box_unit .txt {
+                margin-left: 0px;
+            }
+        }
+
+        @media all and (max-width:480px) {
+            .product .box_unit {
+                height: auto;
+            }
+
+            .product .box_unit>br {
+                display: initial;
+            }
+
+            .product .box_unit .txt {
+                margin: 30px 0
+            }
+
+            .product .box_unit+.box_unit {
+                margin-top: 70px
+            }
+
+            .product .box_unit:nth-child(3) .img {
+                transform: translateY(152px)
+            }
+
+            .product .box_unit:nth-child(3) .txt {
+                transform: translateY(-200px)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- s:header -->
+        <div class="header">
+            <h1>
+                <a href="#">
+                    <img src="img/img_top_logo.png" alt="LINE MAP 로고 이미지">
+                </a>
+            </h1>
+        </div>
+        <!-- e:header -->
+
+        <!-- s:container -->
+        <div class="container">
+            <div class="section product">
+                <!-- s:box_unit -->
+                <div class="box_unit">
+                    <img src="img/img_product_1.png" class="img" alt="지성 FRESH 상품 이미지">
+                    <br>
+                    <img src="img/img_txt_1.png" class="txt" alt="지성 FRESH 텍스트 이미지">
+                </div>
+                <!-- e:box_unit -->
+                <!-- s:box_unit -->
+                <div class="box_unit">
+                    <img src="img/img_product_2.png" class="img" alt="지성 FRESH 상품 이미지">
+                    <br>
+                    <img src="img/img_txt_2.png" class="txt" alt="지성 FRESH 텍스트 이미지">
+                </div>
+                <!-- e:box_unit -->
+                <!-- s:box_unit -->
+                <div class="box_unit">
+                    <img src="img/img_product_3.png" class="img" alt="지성 FRESH 상품 이미지">
+                    <br>
+                    <img src="img/img_txt_3.png" class="txt" alt="지성 FRESH 텍스트 이미지">
+                </div>
+                <!-- e:box_unit -->
+            </div>
+        </div>
+        <!-- e:container -->
+
+    </div>
+</body>
+
+</html>

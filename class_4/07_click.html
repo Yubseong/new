@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>html</title>
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<link href="css/reset.css" rel="stylesheet" type="text/css" />
+
+		
+		<style>
+			.header{background:#333;color:#fff;padding:20px;}
+			.header > h1{float:left; font-size:30px; color:#fff}
+			.header .nav{float:right;margin-top:10px;}
+			.header .nav a{color:#fff; margin-left:10px}
+			.header:after{content: '';display: block;clear: both;}/* 클리어 처리 */
+			.header .nav .btn_nav{
+				display:none;
+			}
+
+			@media all and (max-width:768px){
+				.header .nav{
+					width:70px;
+					height:70px;
+					background:#D7BA7D;
+					float:none;
+					position: fixed;
+					top:0;
+					right:0;
+					margin-top:0;
+				}
+				/* .header .nav:hover{
+					width:200px;
+					height:100vh;
+					z-index: 2;
+				}
+				.header .nav:hover a{
+					display: block;
+					font-size:20px;
+					line-height: 50px;
+					color:#333;
+				} */
+				.header .nav.on{
+					width:200px;
+					height:100vh;
+					z-index: 2;
+				}
+
+				.header .nav.on a{
+					display: block;
+					font-size:20px;
+					line-height: 50px;
+					color:#333;
+					}
+
+				.header .nav:hover a:hover{
+					text-decoration: underline;
+				}
+
+				.header .nav a{
+					display:none
+				}
+
+				.header .nav .btn_nav{
+					display:block;
+					text-indent:-10px; /*<- 접근성 처리를 위한 텍스트 삭제 방법*/
+					width:70px;
+					height:70px;
+					position: absolute;
+					right:0;		
+				}
+
+				.header .nav .btn_nav::before{
+					content:"O";
+					text-indent:15px;
+					font-size:30px;
+				}
+				.header .nav.on .btn_nav::before{
+					content:"X";
+				}
+
+			}
+
+			.container{height:1000px;background:#3f51b5;}
+
+		</style>
+
+		<script>
+			$(function(){
+				$(".header .nav .btn_nav").click(function(){
+					console.log("click event occur")
+					$(".header .nav").toggleClass("on");
+				});
+			})
+		</script>
+		
+  </head>
+  <body>
+		<div class="wrap">
+			<div class="header">
+				<h1>logo</h1>
+				<div class="nav">
+					<button class="btn_nav"></button>
+					<a href="#">menu1</a>
+					<a href="#">menu2</a>
+					<a href="#">menu3</a>
+					
+				</div>
+			</div>
+			<div class="container">
+				
+			</div>
+			<div class="footer"></div>
+		</div>
+  </body>
+</html>

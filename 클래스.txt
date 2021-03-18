@@ -1,0 +1,76 @@
+프론트 엔드는 뭐냐? - 정확한 뭐다! 정의는 어렵고 예시
+
+쿼리 data 규칙을 통해 데이터를 내놔! 하면 서버가 보내줌 - 화면에 데이터를 뿌려줌 ajax,  사용자 인터렉션 처리, data 전송, 서버 저장 개발적인 로직
+
+자바스크립트 프레임웍 / 뷰
+
+프론트 엔드 - 화면 처리영역
+
+백엔드 - 화면 밖에서 이루어지는 영역
+
+프로젝트 개념 용어
+
+system integration (si)제한적 기간안에 정보시스템 기초 설계부터 개발까지 구축하는 업무
+
+system management (sm) 구축된 정보시스템을 지소적으로 변경 운영 유지보수하는 업무
+
+project manager (pm) 프로젝트 내 제일 높은 사람
+
+project leader (pl) 중요 파트 리더
+
+project assistance (pa) 중요 파트의 리더 아래 구성원
+
+work breakdown structure 작업 명세 구조도 (wbs) 프로젝트의 범위, 전체 일정, 세부 요소를 계층적으로 보여줌
+
+story board (sb) 화면설계서 화면에 대한 구성과 기능 정의, 서비스 흐름에 대한 내용을 최종적으로 정리한 문서
+
+AS-IS 이전 작업물
+
+TO-BE 내가 신규로 제작해야하는 프로젝트
+
+IA (Information Architecture) 메뉴 정보, 메뉴 구조도 전체 메뉴 구조
+
+Task Force Team (TFT) 각 부서별로 관련된 인력을 모아 만든 일시적인 팀
+
+R&R (Rol and Responsibilities) 프로젝트 내에서 본인의 위치와 수행해야할 업무에 관한 관계 정립
+
+RFT (Request for proposal) 세부 요구사항을 발주처에 작성하여 제시하는 제안요청서
+
+-
+
+퍼블리셔 용어
+
+퍼블리싱 가이드 (Publishing guide) - 다수 작업자가 동시에 작업하는 공동작업에서 필요한 가이드
+
+퍼블리싱 목록 (Publishing List) - 프로젝트 전체 화면을 한 눈에 볼 수 있도록 일목 요연하기 정리한 목록. 링크
+
+UX (User eXperience) -  사용자가 서비스나 제품 등을 사용하면서 직, 간접적으로 얻게 되는 사용자 경험.
+
+UI (User Interface) - 사용자와 기계 사이의 의사소통을 할 수 있는 물리적, 가상적 매개체, 화면 구성
+
+
+GUI (Graphic User Interface) - 어떤 기능을 사용하기 위해서 ui를 그래픽적으로 화면에 표시하는 look & feel
+
+IA (Information Architecture) - 정보 구조도 (메뉴 구조)
+
+GNB (Global Naviation Bar) - 페이지 전체에 고정된 위치에서 네비게이션바
+
+LNB (Local Naviation Bar) -  서브페이지 성격에 따라 독립적인 형태로 존재.
+
+Header - 주로 화면 상단영역 (로고, GNB, 로그인 등)
+
+Footer - 화면 하단영역 (저작권, 기업정보, 관련사이트)
+
+Front - end (사용자단 - 클라이언트)
+
+Back- end (서버단)
+
+UI 프레임워크 UI 프론트 관련 제작 공수를 줄여주는 기능들 (CSS, JAVASCRIPT)를 담고 있는 종합 요소 (vue, react, angular, 웹스퀘어, 넥사크로)
+
+형상관리 (svn, git) - 여러명이 공동으로 작업해야하는 환경에 적합, 파일 변경 버전 관리, 수정/삭제 복원 - 협업 툴
+
+IOT UX 가전 등에 들어가는 작은 컴퓨터 - (아파트 월패드, 햄버거집 키오스크 - 엄밀히 말하면 주문용 컴퓨터임)
+
+SI 구축 / SM 시스템 구축 Intagration 과 운영 Management
+
+디버깅 / 크롬 브라우저에서 확인 후 수정 가능 개발자 도구 

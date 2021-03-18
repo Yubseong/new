@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+		<link rel="stylesheet" href="css/reset.css">
+    <style>
+			.wrap{
+        width:1200px;
+        margin:0 auto;
+      }
+      .header{
+        height: 100px;
+        background: #246c84;
+      }
+      .container{
+        height:500px;
+        background: #3ebf74;
+        display: flex;
+      }
+      .container .content{
+        flex:100;
+        background:#cd3637;
+      }
+      .container .aside{
+        width:200px;
+        background: #f98903;
+      }
+      .footer{
+        height: 100px;
+        background: #000;
+      }
+
+      @media all and (max-width:1200px){
+        .wrap{
+          width: 768px;
+        }
+        .container{
+          display: block;
+        }
+        .container .content{
+          height:300px;
+        }
+        .container .aside{
+          height:200px;
+          width:auto;
+        }
+      }
+      @media all and (max-width:768px){
+        .wrap{
+          width: auto;
+        }
+        .container .content{
+          height:400px;
+        }
+        .container .aside{
+          height:100px;
+        }
+      }
+
+		</style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header"></div>
+      <div class="container">
+        <div class="content"></div>
+        <div class="aside"></div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>

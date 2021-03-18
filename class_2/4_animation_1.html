@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>html</title>
+		<style>
+			body, h1{margin:0}
+			a{color:#fff}
+
+			.header{
+				background:#333;
+				color:#fff;
+				padding:20px;
+			}
+
+			/* 트랜지션에 관해 */
+
+			/* .section .box{
+				height:50px;
+				width:50px;
+				background:red;
+				margin:0 auto;
+				/* transition:height 0.5s, width 0.5s; */
+				/* transition:all 0.5s;
+			}
+			.section .box:hover{
+				height:100px;
+				width:100px;
+				background:blue;
+			} */
+
+			/* 애니메이션에 관해 */
+
+			/* .section .box{
+				height:50px;
+				width:50px;
+				background:red;
+				margin:0 auto;
+				animation:key_name 2s infinite;
+			}
+			@keyframes key_name{
+				0%{height: 50px; width:50px; margin-top:0;}
+				50%{height:100px; width:50px; margin-top:100px;}
+				100%{height:100px; width:100px; margin-top:0;}
+			} */
+
+			.section .box{
+				height:50px;
+				width:50px;
+				background:red;
+				margin:0 auto;
+				transition:transform .5s
+				/* animation:key_name 2s infinite; */
+				/* transform: scale(.5) */
+				/* transform: translate(30px, -70px); */
+				/* transform:rotate(45deg) */
+			}
+			.section .box:hover{
+				transform:rotate(180deg);
+			}
+				
+		</style>
+
+  </head>
+  <body>
+    <div class="header">
+			<h1>logo</h1>
+			<div class="nav">
+				<a href="#">menu1</a>
+				<a href="#">menu2</a>
+				<a href="#">menu3</a>
+			</div>
+    </div>
+		<div class="container">
+				<div class="section">
+					<!-- <div class="box"></div> -->
+					<div class="box"></div>
+				</div>
+				
+		</div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+		<link rel="stylesheet" href="css/reset.css">
+    <style>
+      /* 최소값 지정 */
+			/* @media all and (min-width:500px){
+        .media{
+          width:300px;
+          height: 300px;
+          background: #ff0000;
+        }
+      } */
+
+      /* 최대값 지정 */
+      /* @media all and (max-width:1000px){
+        .media{
+          width: 500px;
+          height: 500px;
+          background: #00ff00;
+        }
+      } */
+
+      /* 최소,최대값 교집합 지정 */
+      /* @media all and (min-width:500px) and (max-width:1000px){
+        .media{
+          height:300px;
+          background: cadetblue;
+        }
+      } */
+
+      /* pc 영역 */
+      .media{
+        width:1200px;
+        margin:0 auto; /* block요소를 가운데 정렬 시킴 */
+        height:300px;
+        background: coral;
+      }
+
+      /* 태블릿 영역 */
+      @media all and (max-width:1024px){
+        .media{
+          width: auto; /* block요소 넓이값 초기화(100%)*/
+          background: green;
+        }
+      }
+
+      /* 모바일 영역 */
+      @media all and (max-width:768px){
+        .media{
+          background: gray;
+        }
+      }
+		</style>
+  </head>
+  <body>
+    <div class="media"></div>
+  </body>
+</html>
